@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sinvac-900: #173B35;
+  --color-sinvac-700: #287C68;
+  --color-sinvac-100: #EAF2EF;
+  --color-sinvac-background: #F5F6F8;
+}

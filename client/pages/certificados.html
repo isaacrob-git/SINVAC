@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SINVAC - Solicitud de Certificados</title>
+  <link rel="stylesheet" href="../css/output.css">
+</head>
+<body class="bg-[var(--color-sinvac-background)] min-h-screen flex flex-col md:flex-row font-sans antialiased">
+
+  <!-- Sidebar Unificado -->
+  <aside class="w-full md:w-64 bg-[var(--color-sinvac-900)] text-white flex-shrink-0 flex flex-col justify-between shadow-lg">
+    <div>
+      <div class="p-6 border-b border-white/10 flex items-center space-x-3">
+        <div class="bg-[var(--color-sinvac-700)] text-white font-bold p-2 rounded-xl text-sm">SV</div>
+        <div>
+          <span class="text-xl font-black tracking-wider block">SINVAC</span>
+          <span class="text-[10px] uppercase tracking-widest text-[var(--color-sinvac-100)] opacity-75">Panel Funcionario</span>
+        </div>
+      </div>
+      
+      <nav class="p-4 space-y-1.5 text-sm">
+        <a href="dashboard.html" class="flex items-center space-x-3 px-4 py-3 rounded-xl hover:bg-white/10 text-gray-300 font-medium transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2h-2a2 2 0 01-2-2v-2z"/></svg>
+          <span>Dashboard</span>
+        </a>
+        <a href="personas.html" class="flex items-center space-x-3 px-4 py-3 rounded-xl hover:bg-white/10 text-gray-300 font-medium transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          <span>Personas / Expedientes</span>
+        </a>
+        <a href="vacunas.html" class="flex items-center space-x-3 px-4 py-3 rounded-xl hover:bg-white/10 text-gray-300 font-medium transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+          <span>Vacunación</span>
+        </a>
+        <a href="certificados.html" class="flex items-center space-x-3 px-4 py-3 rounded-xl bg-[var(--color-sinvac-700)] text-white font-semibold shadow-xs">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>Certificados</span>
+        </a>
+      </nav>
+    </div>
+    
+    <div class="p-4 m-4 bg-white/5 rounded-xl border border-white/10 text-xs text-gray-300">
+      <p class="font-bold text-white mb-0.5">Rol Activo:</p>
+      <p class="opacity-90">Personal Certificador</p>
+    </div>
+  </aside>
+
+  <!-- Contenido -->
+  <div class="flex-grow flex flex-col min-w-0">
+    
+    <!-- Header Top Unificado -->
+    <header class="bg-white border-b border-gray-200 py-4 px-8 flex justify-between items-center shadow-xs">
+      <div>
+        <h2 class="text-base font-bold text-gray-800">Evaluación y Emisión de Certificados</h2>
+        <p class="text-xs text-gray-500">Revisión de requisitos y emisión oficial de documentos PDF</p>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <div class="text-right hidden sm:block">
+          <p class="text-sm font-bold text-gray-800">Carlos Mendoza</p>
+          <span class="text-[11px] text-emerald-600 font-semibold">● En línea</span>
+        </div>
+        <a href="login.html" class="inline-flex items-center space-x-1.5 text-xs font-semibold text-red-600 border border-red-200 bg-red-50/50 px-3 py-2 rounded-xl hover:bg-red-100 transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/></svg>
+          <span>Salir</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="p-8 flex-grow">
+      
+      <!-- Título y Acción Superior -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+        <div>
+          <h1 class="text-2xl font-black text-[var(--color-sinvac-900)]">Solicitudes de Certificados</h1>
+          <p class="text-sm text-gray-500">Evalúe los requisitos registrados antes de aprobar la emisión oficial del PDF.</p>
+        </div>
+        <button class="bg-[var(--color-sinvac-900)] hover:bg-[var(--color-sinvac-700)] text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition shadow-md flex items-center space-x-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+          <span>Nueva Solicitud</span>
+        </button>
+      </div>
+
+      <!-- Filtros de Estado -->
+      <div class="bg-white p-5 rounded-2xl border border-gray-200 shadow-xs mb-6">
+        <form class="grid grid-cols-1 sm:grid-cols-4 gap-4">
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1.5">Código de Solicitud / Cédula</label>
+            <input type="text" placeholder="Ej: SOL-2026-089" class="w-full border border-gray-300 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-sinvac-700)] bg-gray-50/50">
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1.5">Tipo de Certificado</label>
+            <select class="w-full border border-gray-300 rounded-xl px-3.5 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[var(--color-sinvac-700)]">
+              <option value="">Todos los Tipos</option>
+              <option value="1">Internacional de Fiebre Amarilla</option>
+              <option value="2">Esquema Completo de Vacunación</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-1.5">Estado</label>
+            <select class="w-full border border-gray-300 rounded-xl px-3.5 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[var(--color-sinvac-700)]">
+              <option value="">Todos los Estados</option>
+              <option value="1">Pendiente</option>
+              <option value="2">En Revisión</option>
+              <option value="3">Aprobada</option>
+              <option value="4">Emitida</option>
+              <option value="5">Rechazada</option>
+            </select>
+          </div>
+          <div class="flex items-end">
+            <button type="button" class="w-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-2.5 px-4 rounded-xl text-sm border border-gray-300 transition">
+              Filtrar Solicitudes
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Tabla de Solicitudes -->
+      <div class="bg-white rounded-2xl border border-gray-200 shadow-xs overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-sm text-gray-600">
+            <thead class="bg-gray-50 text-gray-700 uppercase text-[11px] font-bold border-b border-gray-200 tracking-wider">
+              <tr>
+                <th class="py-3.5 px-6">Código Solicitud</th>
+                <th class="py-3.5 px-6">Ciudadano</th>
+                <th class="py-3.5 px-6">Tipo de Certificado</th>
+                <th class="py-3.5 px-6">Fecha Solicitud</th>
+                <th class="py-3.5 px-6">Estado</th>
+                <th class="py-3.5 px-6 text-center">Acciones</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100">
+              
+              <!-- Fila 1: En Revisión -->
+              <tr class="hover:bg-gray-50/50">
+                <td class="py-4 px-6 font-mono font-bold text-gray-900">SOL-2026-089</td>
+                <td class="py-4 px-6">
+                  <p class="font-semibold text-gray-800">María Alejandra Rodríguez</p>
+                  <p class="text-xs font-mono text-gray-400">V-25123456</p>
+                </td>
+                <td class="py-4 px-6 text-gray-600">Fiebre Amarilla (Internacional)</td>
+                <td class="py-4 px-6 text-gray-500">03/11/2026</td>
+                <td class="py-4 px-6">
+                  <span class="inline-flex items-center bg-amber-50 text-amber-700 border border-amber-200 text-xs font-bold px-2.5 py-1 rounded-lg">
+                    ● En Revisión
+                  </span>
+                </td>
+                <td class="py-4 px-6 text-center">
+                  <a href="#" class="text-xs bg-[var(--color-sinvac-900)] text-white px-3.5 py-1.5 rounded-xl font-bold hover:bg-[var(--color-sinvac-700)] transition">
+                    Evaluar Requisitos
+                  </a>
+                </td>
+              </tr>
+
+              <!-- Fila 2: Emitida -->
+              <tr class="hover:bg-gray-50/50">
+                <td class="py-4 px-6 font-mono font-bold text-gray-900">SOL-2026-074</td>
+                <td class="py-4 px-6">
+                  <p class="font-semibold text-gray-800">José Gregorio Hernández</p>
+                  <p class="text-xs font-mono text-gray-400">V-18987654</p>
+                </td>
+                <td class="py-4 px-6 text-gray-600">Esquema Completo Adulto</td>
+                <td class="py-4 px-6 text-gray-500">01/11/2026</td>
+                <td class="py-4 px-6">
+                  <span class="inline-flex items-center bg-emerald-50 text-emerald-700 border border-emerald-200 text-xs font-bold px-2.5 py-1 rounded-lg">
+                    ✓ Emitido (PDF)
+                  </span>
+                </td>
+                <td class="py-4 px-6 text-center space-x-2">
+                  <a href="#" class="inline-flex items-center space-x-1 text-xs bg-gray-100 text-gray-700 border border-gray-300 px-3 py-1.5 rounded-xl font-bold hover:bg-gray-200 transition">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                    <span>Descargar PDF</span>
+                  </a>
+                </td>
+              </tr>
+
+              <!-- Fila 3: Pendiente -->
+              <tr class="hover:bg-gray-50/50">
+                <td class="py-4 px-6 font-mono font-bold text-gray-900">SOL-2026-092</td>
+                <td class="py-4 px-6">
+                  <p class="font-semibold text-gray-800">Ana Karina López</p>
+                  <p class="text-xs font-mono text-gray-400">V-30111222</p>
+                </td>
+                <td class="py-4 px-6 text-gray-600">Fiebre Amarilla (Internacional)</td>
+                <td class="py-4 px-6 text-gray-500">04/11/2026</td>
+                <td class="py-4 px-6">
+                  <span class="inline-flex items-center bg-blue-50 text-blue-700 border border-blue-200 text-xs font-bold px-2.5 py-1 rounded-lg">
+                    ● Pendiente
+                  </span>
+                </td>
+                <td class="py-4 px-6 text-center">
+                  <a href="#" class="text-xs bg-gray-100 text-gray-700 border border-gray-300 px-3 py-1.5 rounded-xl font-bold hover:bg-gray-200 transition">
+                    Iniciar Revisión
+                  </a>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Paginador -->
+        <div class="px-6 py-4 border-t border-gray-200 flex justify-between items-center text-xs text-gray-500">
+          <span>Mostrando 3 de 14 solicitudes pendientes de atención</span>
+          <div class="space-x-1">
+            <button class="px-3 py-1.5 border border-gray-300 rounded-lg bg-white text-gray-600 disabled" disabled>Anterior</button>
+            <button class="px-3 py-1.5 border border-gray-300 rounded-lg bg-white text-gray-600 hover:bg-gray-50">Siguiente</button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</body>
+</html>

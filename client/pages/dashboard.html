@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SINVAC - Dashboard Institucional</title>
+  <link rel="stylesheet" href="../css/output.css">
+</head>
+<body class="bg-[var(--color-sinvac-background)] min-h-screen flex flex-col md:flex-row font-sans antialiased">
+
+  <!-- Sidebar Lateral -->
+  <aside class="w-full md:w-64 bg-[var(--color-sinvac-900)] text-white flex-shrink-0 flex flex-col justify-between shadow-lg">
+    <div>
+      <div class="p-6 border-b border-white/10 flex items-center space-x-3">
+        <div class="bg-[var(--color-sinvac-700)] text-white font-bold p-2 rounded-xl text-sm">
+          SV
+        </div>
+        <div>
+          <span class="text-xl font-black tracking-wider block">SINVAC</span>
+          <span class="text-[10px] uppercase tracking-widest text-[var(--color-sinvac-100)] opacity-75">Panel Funcionario</span>
+        </div>
+      </div>
+      
+      <nav class="p-4 space-y-1.5 text-sm">
+        <a href="dashboard.html" class="flex items-center space-x-3 px-4 py-3 rounded-xl bg-[var(--color-sinvac-700)] text-white font-semibold shadow-xs">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+          <span>Dashboard</span>
+        </a>
+        <a href="personas.html" class="flex items-center space-x-3 px-4 py-3 rounded-xl hover:bg-white/10 text-gray-300 font-medium transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          <span>Personas / Expedientes</span>
+        </a>
+        <a href="vacunas.html" class="flex items-center space-x-3 px-4 py-3 rounded-xl hover:bg-white/10 text-gray-300 font-medium transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+          <span>Vacunación</span>
+        </a>
+        <a href="certificados.html" class="flex items-center space-x-3 px-4 py-3 rounded-xl hover:bg-white/10 text-gray-300 font-medium transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>Certificados</span>
+        </a>
+      </nav>
+    </div>
+    
+    <div class="p-4 m-4 bg-white/5 rounded-xl border border-white/10 text-xs text-gray-300">
+      <p class="font-bold text-white mb-0.5">Rol Activo:</p>
+      <p class="opacity-90">Personal de Vacunación</p>
+    </div>
+  </aside>
+
+  <!-- Contenido General -->
+  <div class="flex-grow flex flex-col min-w-0">
+    
+    <!-- Top Navbar -->
+    <header class="bg-white border-b border-gray-200 py-4 px-8 flex justify-between items-center shadow-xs">
+      <div>
+        <h2 class="text-base font-bold text-gray-800">Centro de Salud: Ambulatorio Central II</h2>
+        <p class="text-xs text-gray-500">Municipio Juan Germán Roscio, Guárico</p>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <div class="text-right hidden sm:block">
+          <p class="text-sm font-bold text-gray-800">Carlos Mendoza</p>
+          <span class="text-[11px] text-emerald-600 font-semibold">● En línea</span>
+        </div>
+        <a href="login.html" class="inline-flex items-center space-x-1.5 text-xs font-semibold text-red-600 border border-red-200 bg-red-50/50 px-3 py-2 rounded-xl hover:bg-red-100 transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/></svg>
+          <span>Salir</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Main View -->
+    <main class="p-8 flex-grow">
+      <div class="mb-8">
+        <h1 class="text-2xl font-black text-[var(--color-sinvac-900)]">Panel de Control</h1>
+        <p class="text-sm text-gray-500">Métricas y registros rápidos del centro de atención asignado.</p>
+      </div>
+
+      <!-- Métricas / Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        
+        <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-xs flex items-center justify-between">
+          <div>
+            <p class="text-xs font-bold uppercase tracking-wider text-gray-400">Personas</p>
+            <p class="text-3xl font-black text-gray-800 mt-1">1,248</p>
+            <span class="text-xs text-emerald-600 font-semibold">Registros unificados</span>
+          </div>
+          <div class="p-3.5 bg-emerald-50 text-[var(--color-sinvac-700)] rounded-xl">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-xs flex items-center justify-between">
+          <div>
+            <p class="text-xs font-bold uppercase tracking-wider text-gray-400">Dosis Aplicadas</p>
+            <p class="text-3xl font-black text-[var(--color-sinvac-700)] mt-1">3,410</p>
+            <span class="text-xs text-gray-500">Historial general</span>
+          </div>
+          <div class="p-3.5 bg-emerald-50 text-[var(--color-sinvac-700)] rounded-xl">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-xs flex items-center justify-between">
+          <div>
+            <p class="text-xs font-bold uppercase tracking-wider text-gray-400">Pendientes</p>
+            <p class="text-3xl font-black text-amber-600 mt-1">14</p>
+            <span class="text-xs text-amber-700 font-semibold">Solicitudes de certificados</span>
+          </div>
+          <div class="p-3.5 bg-amber-50 text-amber-600 rounded-xl">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-xs flex items-center justify-between">
+          <div>
+            <p class="text-xs font-bold uppercase tracking-wider text-gray-400">Certificados</p>
+            <p class="text-3xl font-black text-gray-800 mt-1">892</p>
+            <span class="text-xs text-emerald-600 font-semibold">Emitidos y vigentes</span>
+          </div>
+          <div class="p-3.5 bg-emerald-50 text-[var(--color-sinvac-700)] rounded-xl">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tabla Reciente -->
+      <div class="bg-white rounded-2xl border border-gray-200 shadow-xs overflow-hidden">
+        <div class="px-6 py-5 border-b border-gray-100 flex justify-between items-center">
+          <h3 class="font-bold text-gray-800">Últimas Aplicaciones Registradas en el Centro</h3>
+          <a href="vacunas.html" class="text-xs font-bold text-[var(--color-sinvac-700)] hover:underline">Ver todas &rarr;</a>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-sm text-gray-600">
+            <thead class="bg-gray-50 text-gray-700 uppercase text-[11px] font-bold border-b border-gray-200 tracking-wider">
+              <tr>
+                <th class="py-3.5 px-6">Cédula</th>
+                <th class="py-3.5 px-6">Nombre del Paciente</th>
+                <th class="py-3.5 px-6">Vacuna Aplicada</th>
+                <th class="py-3.5 px-6">Dosis</th>
+                <th class="py-3.5 px-6">Fecha</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100">
+              <tr class="hover:bg-gray-50/50">
+                <td class="py-4 px-6 font-mono font-bold text-gray-900">V-25123456</td>
+                <td class="py-4 px-6 font-medium text-gray-800">María Alejandra Rodríguez</td>
+                <td class="py-4 px-6"><span class="bg-emerald-50 text-[var(--color-sinvac-700)] text-xs font-semibold px-2.5 py-1 rounded-lg">Fiebre Amarilla</span></td>
+                <td class="py-4 px-6 text-gray-500">Dosis Única</td>
+                <td class="py-4 px-6 text-gray-500">04/11/2026</td>
+              </tr>
+              <tr class="hover:bg-gray-50/50">
+                <td class="py-4 px-6 font-mono font-bold text-gray-900">V-18987654</td>
+                <td class="py-4 px-6 font-medium text-gray-800">José Gregorio Hernández</td>
+                <td class="py-4 px-6"><span class="bg-emerald-50 text-[var(--color-sinvac-700)] text-xs font-semibold px-2.5 py-1 rounded-lg">Hepatitis B</span></td>
+                <td class="py-4 px-6 text-gray-500">Segunda Dosis</td>
+                <td class="py-4 px-6 text-gray-500">04/11/2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>
